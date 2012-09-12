@@ -474,7 +474,7 @@
 				<import />
 			</state>
 			
-			<state id="if then fi Block" type="block" foldable="yes" scope="keyword.control.bash">
+			<state id="if fi Block" type="block" foldable="yes" scope="keyword.control.bash">
 				<begin><regex>(?&lt;![^;\s])then(?!\S)</regex></begin>
 				<end><regex>(?&lt;!\S)fi(?!\S)</regex></end>
 				<import />
