@@ -7,7 +7,7 @@
         <endregex>}</endregex>
     </blocks>
     
-    <symbol id="C Funtions" image="SymbolF()" indentation="1" ignoreblocks="yes">
+    <symbol id="C Functions" image="SymbolF()" indentation="1" ignoreblocks="yes">
         <regex>([\w\d_]+)[ \t]*\([^)]*\)[^{]*\{</regex>
         <postprocess>
             <find>\([^\)]*\)</find>
