@@ -1,4 +1,4 @@
-Coda2-bash.mode
+Coda2-bash-mode
 ===============
 
 Bash syntax mode for Coda 2.
