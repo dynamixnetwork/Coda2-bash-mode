@@ -7,16 +7,22 @@
 	<key>CFBundleName</key>
 	<string>bash</string>
     <key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.0 William Jamieson.</string>
+	<string>1.1 William Jamieson</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© 2012 William Jamieson.</string>
+	<string>© 2013 William Jamieson https://github.com/wwjamieson3</string>
+	<key>CFBundleGetInfoString</key>
+	<string>1.1 William Jamieson</string>
+	<key>CodaAuthorString</key>
+	<string>William Jamieson</string>
+	<key>CodaDescriptionString</key>
+	<string>bash script syntax highlighting mode for Coda 2.x</string>
 </dict>
 </plist>
