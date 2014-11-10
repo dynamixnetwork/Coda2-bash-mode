@@ -5,7 +5,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>SEEMode.bash</string>
 	<key>CFBundleName</key>
-	<string>bash</string>
+	<string>Bash</string>
     <key>CFBundleShortVersionString</key>
 	<string>1.1</string>
 	<key>CFBundleVersion</key>
@@ -23,6 +23,6 @@
 	<key>CodaAuthorString</key>
 	<string>William Jamieson</string>
 	<key>CodaDescriptionString</key>
-	<string>bash script syntax highlighting mode for Coda 2.x</string>
+	<string>Bash script syntax highlighting mode for Coda 2.x</string>
 </dict>
 </plist>

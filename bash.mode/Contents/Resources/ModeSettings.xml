@@ -5,6 +5,7 @@
         <extension>bash</extension>
         <extension>bashrc</extension>
         <extension>login</extension>
+        <extension>command</extension>
         <filename>.bash_profile</filename>
         <filename>.bashrc</filename>
         <filename>configure</filename>
