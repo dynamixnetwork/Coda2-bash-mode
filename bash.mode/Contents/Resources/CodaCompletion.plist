@@ -8,7 +8,7 @@
 		<string>#</string>
 	</dict>
 	<key>Name</key>
-	<string>bash</string>
+	<string>Bash</string>
 	<key>LineCompletion</key>
 	<string>;</string>
 	<key>VariablePrefixes</key>

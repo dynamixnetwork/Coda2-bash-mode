@@ -2,13 +2,13 @@
 <!DOCTYPE syntax SYSTEM "syntax.dtd">
 <syntax>
 	<head>
-		<name>bash</name> <!-- The definitions title -->
+		<name>Bash</name> <!-- The definitions title -->
 		<charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@/.]]></charsintokens> <!-- Valid Characters for Variables -->
         <charsincompletion><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-@$&lt;/=>!]]></charsincompletion>
 		<charsdelimitingtokens><![CDATA[()@$&lt;+;/=>!]]></charsdelimitingtokens>
 	</head>
 	<states>
-		<default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal">            
+		<default id="Base" color="#000" background-color="#fff" font-weight="normal" font-style="normal">
 			<keywords id="Keywords" color="#881350" useforautocomplete="yes" scope="keyword.control.bash">
 				<string>else</string>
 				<string>for</string>
@@ -28,7 +28,7 @@
 				<string>case</string>
 				<string>esac</string>
 			</keywords>
-			
+
 			<keywords id="Keywords for Variables" color="#881350" useforautocomplete="yes" scope="keyword.type.bash">
 				<string>export</string>
 				<string>unset</string>
@@ -36,7 +36,7 @@
 				<string>typeset</string>
 				<string>local</string>
 			</keywords>
-			
+
 			<keywords id="Builtin functions" color="#408" useforautocomplete="yes" scope="support.function.bash">
 				<string>source</string>
 				<string>alias</string>
@@ -417,30 +417,30 @@
 				<string>zip</string>
 				<string>zsoelim</string>
 			</keywords>
-			
+
 			<keywords id="Numbers" color="#00f" inverted-color="#5d56ff" useforautocomplete="no" scope="constant.numeric.bash">
 				<regex>(?&lt;=[^[A-Za-z0-9]]|^)((?:(?:[0-9]+\.[0-9]*)|(?:\.[0-9]+)([eE][+\-]?[0-9]+)?[fFlL]?)|(?:(?:(?:[1-9][0-9]*)|0[0-7]*|(?:0[xX][0-9a-fA-F]))(?:(?:[uU][lL]?)|(?:[lL][uU]?))?))(?=[^[A-Za-z0-9]]|$)</regex>
 			</keywords>
-			
+
 			<keywords id="FunctionRegex" color="#003369" useforautocomplete="no" scope="support.function.bash">
 				<regex>([A-Za-z0-9_]+ *)\(([^\(])</regex>
 			</keywords>
-			
+
 			<keywords id="Preprocessor" color="#683821" useforautocomplete="no" scope="markup.declaration.bash">
 				<regex>(^[ \t]*#([^\n\r])*)([^)])</regex>
 			</keywords>
-			
+
 			<keywords id="Variables" color="#C4620A" useforautocomplete="no" scope="language.variable.bash">
 				<regex>(\$[#@A-Za-z0-9_]+)</regex>
 				<regex>(\$\{[^\}]*\})</regex>
 			</keywords>
-			
+
 			<state id="SingleComment" type="comment" color="#236E25" font-weight="normal" font-style="italic" scope="comment.line.bash">
 				<begin><regex>(?&lt;!\$)#</regex></begin>
 				<end><regex>[\n\r]</regex></end>
 				<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
 			</state>
-			
+
 			<state id="String with double quotes" type="string" color="#760f15" scope="string.double.bash">
 				<begin><string>((?&lt;!\\)(\\\\)*)"</string></begin>
 				<end><regex>(((?&lt;!\\)(\\\\)*)|^)"</regex></end>
@@ -449,7 +449,7 @@
 					<regex>(\$\{[^\}]*\})</regex>
 				</keywords>
 			</state>
-			
+
 			<state id="String with single quotes" type="string" color="#760f15" scope="string.single.bash">
 				<begin><string>((?&lt;!\\)(\\\\)*)'</string></begin>
 				<end><regex>'</regex></end>
@@ -458,36 +458,36 @@
 					<regex>(\$\{[^\}]*\})</regex>
 				</keywords>
 			</state>
-			
+
 			<state id="Backticks" color="#608" scope="string.backticks.bash">
 				<begin><string>(?&lt;!\\)(\\\\)*`</string></begin>
 				<end><regex>(?&lt;!\\)(\\\\)*`</regex></end>
 			</state>
-			
+
 			<state id="do done Block" type="block" foldable="yes" scope="keyword.control.bash">
 				<begin><regex>(?&lt;![^;\s])do(?!\S)</regex></begin>
 				<end><regex>(?&lt;!\S)done(?!\S)</regex></end>
 				<import />
 			</state>
-			
+
 			<state id="case esac Block" type="block" foldable="yes" scope="keyword.control.bash">
 				<begin><regex>(?&lt;![^;\s])case(?!\S)</regex></begin>
 				<end><regex>(?&lt;!\S)esac(?!\S)</regex></end>
 				<import />
 			</state>
-			
+
 			<state id="if fi Block" type="block" foldable="yes" scope="keyword.control.bash">
 				<begin><regex>(?&lt;![^;\s])then(?!\S)</regex></begin>
 				<end><regex>(?&lt;!\S)fi(?!\S)</regex></end>
 				<import />
 			</state>
-			
+
 			<state id="Anti Bracket Block" foldable="no" scope="language.operator.bash">
 				<begin><regex>\${</regex></begin>
 				<end><regex>}</regex></end>
 				<import />
 			</state>
-			
+
 			<state id="Bracket Block" type="block" foldable="yes" scope="language.operator.bash">
 				<begin><regex>(?:(?&lt;=\s)function[\s\w]+)?(?&lt;!\\){</regex></begin>
 				<end><regex>(?&lt;!\\)}</regex></end>
