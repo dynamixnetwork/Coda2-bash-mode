@@ -436,7 +436,7 @@
 			</keywords>
 
 			<state id="SingleComment" type="comment" color="#236E25" font-weight="normal" font-style="italic" scope="comment.line.bash">
-				<begin><regex>(?&lt;!\$)#</regex></begin>
+				<begin><regex>^[ \t]*(?&lt;!\$)#</regex></begin>
 				<end><regex>[\n\r]</regex></end>
 				<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
 			</state>
@@ -464,19 +464,19 @@
 				<end><regex>(?&lt;!\\)(\\\\)*`</regex></end>
 			</state>
 
-			<state id="do done Block" type="block" foldable="yes" scope="keyword.control.bash">
+			<state id="do done Block" type="block" foldable="yes" scope="">
 				<begin><regex>(?&lt;![^;\s])do(?!\S)</regex></begin>
 				<end><regex>(?&lt;!\S)done(?!\S)</regex></end>
 				<import />
 			</state>
 
-			<state id="case esac Block" type="block" foldable="yes" scope="keyword.control.bash">
+			<state id="case esac Block" type="block" foldable="yes" scope="">
 				<begin><regex>(?&lt;![^;\s])case(?!\S)</regex></begin>
 				<end><regex>(?&lt;!\S)esac(?!\S)</regex></end>
 				<import />
 			</state>
 
-			<state id="if fi Block" type="block" foldable="yes" scope="keyword.control.bash">
+			<state id="if fi Block" type="block" foldable="yes" scope="">
 				<begin><regex>(?&lt;![^;\s])then(?!\S)</regex></begin>
 				<end><regex>(?&lt;!\S)fi(?!\S)</regex></end>
 				<import />
@@ -491,6 +491,11 @@
 			<state id="Bracket Block" type="block" foldable="yes" scope="language.operator.bash">
 				<begin><regex>(?:(?&lt;=\s)function[\s\w]+)?(?&lt;!\\){</regex></begin>
 				<end><regex>(?&lt;!\\)}</regex></end>
+				<import />
+			</state>
+			<state id="Conditional Block" color="#fff" type="block" foldable="yes" scope="language.operator.bash">
+				<begin><regex>\[\[</regex></begin>
+				<end><regex>\]\]</regex></end>
 				<import />
 			</state>
 			<state id="Arithmatic Block" type="block" foldable="yes" scope="language.operator.bash">

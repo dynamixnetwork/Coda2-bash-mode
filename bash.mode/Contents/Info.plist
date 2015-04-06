@@ -7,19 +7,19 @@
 	<key>CFBundleName</key>
 	<string>Bash</string>
     <key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.1 William Jamieson</string>
+	<string>1.2 William Jamieson</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© 2013 William Jamieson https://github.com/wwjamieson3</string>
+	<string>© 2015 William Jamieson https://github.com/wwjamieson3</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.1 William Jamieson</string>
+	<string>1.2 William Jamieson</string>
 	<key>CodaAuthorString</key>
 	<string>William Jamieson</string>
 	<key>CodaDescriptionString</key>
