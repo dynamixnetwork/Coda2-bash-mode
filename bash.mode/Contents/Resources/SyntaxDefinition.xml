@@ -436,7 +436,7 @@
 			</keywords>
 
 			<state id="SingleComment" type="comment" color="#236E25" font-weight="normal" font-style="italic" scope="comment.line.bash">
-				<begin><regex>^[ \t]*(?&lt;!\$)#</regex></begin>
+				<begin><regex>(?&lt;!\$)#</regex></begin>
 				<end><regex>[\n\r]</regex></end>
 				<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
 			</state>
