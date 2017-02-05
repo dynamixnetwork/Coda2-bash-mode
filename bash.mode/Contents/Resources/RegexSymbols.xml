@@ -26,5 +26,9 @@
             <replace>Versioning conflict!</replace>
         </postprocess>
     </symbol>
-
+    
+    <symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
+        <regex>#[ \t]*!([^\n\r]+)</regex>
+    </symbol>
+    
 </symbols>
